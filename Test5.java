@@ -28,6 +28,8 @@ public class Test5 {
 			  
 		}
 			System.out.println(sum);
+			System.out.println("afsdfs");
+			System.out.println("ewfsfsd");
 			String text = driver.findElement(By.xpath("//div[contains(text(),'Total Amount Collected: 296')]")).getText().split(":")[1].trim();
 			int Expected = Integer.parseInt(text);
 			Assert.assertEquals(Expected,sum);
